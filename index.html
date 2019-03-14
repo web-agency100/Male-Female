@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+        background: linear-gradient(#0080ff, #ff0080);
+        
+        }
+        .Header{
+            background: url('images.jpg');
+            width: 1000px;
+            height: 450px;
+            background-repeat: no-repeat;
+            margin-left: 24%;
+            margin-top: 5%;
+            
+        }
+        button{
+            width: 120px;
+            height: 50px;
+            border-radius: 20px;
+            font-display: fixed;
+            margin-top: 10px;
+            background: black;
+            color: white;
+        }
+        .btn2:hover{
+            background: #ff0080;
+            color: black;
+        }
+        .btn:hover{
+            background: #0080ff;
+            color: black;
+        }
+        .btn2{
+            float: right;
+            margin-right: 250px;
+        }
+        .btn{
+            margin-left: 250px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+        }
+        .btn:focus{
+            background: black;
+            color: #0080ff;
+        }
+        .btn2:focus{
+            background: black;
+            color: #ff0080;
+        }
+    </style>
+</head>
+<body>
+    <h1>MALE / FEMALE BUTTONS</h1>
+    <div class="Header"></div>
+    
+    <button class="btn" onclick="male();">Start For Male</button>
+    <button class="btn2" onclick="female();">Start For Female</button>
+
+</body>
+<script>
+   function male(){
+        var name = prompt("Please enter your name.");
+        var gender = prompt("Are you male or female.");
+        var maleGender= "Male";
+        if(maleGender===gender){
+            alert("Hello sir!"+'\n'+"Welcome to JS Land...");
+        }
+        else{
+            alert("Please enter valid name and gender");
+        }
+    }
+    function female(){
+        var name = prompt("Please enter your name.");
+        var gender = prompt("Are you male or female.");
+        var femaleGender = "Female";
+        if(femaleGender===gender){
+            alert("Hello Madam!"+'\n'+"Welcome to JS Land...");
+        }
+        else{
+            alert("Please enter valid name and gender");
+        }
+    }
+</script>
+</html>
